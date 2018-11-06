@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="struk_pemesanan" language="groovy" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="438b7f84-51c7-4031-a3a6-c3ee2cc357d3">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="id_pelanggan" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     pelanggan.`id_pelanggan` AS pelanggan_id_pelanggan,
+     pelanggan.`nama_pelanggan` AS pelanggan_nama_pelanggan,
+     pelanggan.`alamat_pelanggan` AS pelanggan_alamat_pelanggan,
+     pelanggan.`no_tlp` AS pelanggan_no_tlp,
+     pemesanan.`id_pelanggan` AS pemesanan_id_pelanggan,
+     pemesanan.`tanggal_pengiriman` AS pemesanan_tanggal_pengiriman,
+     pemesanan.`paket_pesanan` AS pemesanan_paket_pesanan,
+     pemesanan.`jumlah_pesanan` AS pemesanan_jumlah_pesanan,
+     pemesanan.`total_harga` AS pemesanan_total_harga,
+     pemesanan.`dibayar` AS pemesanan_dibayar,
+     pemesanan.`sisa_pembayaran` AS pemesanan_sisa_pembayaran,
+     pemesanan.`status` AS pemesanan_status
+FROM
+     `pelanggan` pelanggan INNER JOIN `pemesanan` pemesanan ON pelanggan.`id_pelanggan` = pemesanan.`id_pelanggan`
+
+WHERE pelanggan.id_pelanggan LIKE '%$P!{id_pelanggan}']]>
+	</queryString>
+	<field name="pelanggan_id_pelanggan" class="java.lang.Integer"/>
+	<field name="pelanggan_nama_pelanggan" class="java.lang.String"/>
+	<field name="pelanggan_alamat_pelanggan" class="java.lang.String"/>
+	<field name="pelanggan_no_tlp" class="java.lang.String"/>
+	<field name="pemesanan_id_pelanggan" class="java.lang.Integer"/>
+	<field name="pemesanan_tanggal_pengiriman" class="java.lang.String"/>
+	<field name="pemesanan_paket_pesanan" class="java.lang.String"/>
+	<field name="pemesanan_jumlah_pesanan" class="java.lang.Integer"/>
+	<field name="pemesanan_total_harga" class="java.lang.Integer"/>
+	<field name="pemesanan_dibayar" class="java.lang.Integer"/>
+	<field name="pemesanan_sisa_pembayaran" class="java.lang.Integer"/>
+	<field name="pemesanan_status" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="136" y="0" width="301" height="43" uuid="aabf0df6-3469-43a9-8841-10c81f613fd8"/>
+				<textElement>
+					<font size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KATERING BAROKAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="59" width="118" height="20" uuid="486575b3-d5e7-4ade-bf39-37942dc3caa0"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Tlp 089505406880]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="381" y="59" width="191" height="20" uuid="10c3cd9a-3fd8-4c13-8888-b63825b77eb9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[E-Mail : kateringbarokah73@gmail.com]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="70" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="572" height="12" backcolor="#000000" uuid="2b0a3f94-e5d5-4128-9796-4f55aa285db5"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="234" y="39" width="100" height="20" uuid="6d4c71b5-883c-4771-88b0-543a9689dfac"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PEMESANAN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="234" splitType="Stretch">
+			<textField>
+				<reportElement x="136" y="0" width="436" height="20" uuid="22f06076-a1b8-46b2-843d-0bf99da7c635"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelanggan_id_pelanggan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="136" height="20" uuid="bb911b8d-095f-4a89-ac26-79500c31c132"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="136" y="20" width="436" height="20" uuid="137c1c19-f179-42d1-807d-8159960cbdcd"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pelanggan_nama_pelanggan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="136" height="20" uuid="1d7db583-f888-4524-a4b3-a3a2ae535f52"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Pelanggan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="136" y="40" width="436" height="52" uuid="f192bc64-e9cf-4219-b596-bffa412891a6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pemesanan_paket_pesanan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="40" width="136" height="20" uuid="5e9fd0f7-42ed-4b99-bd1c-4b5a09fb21cb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paket Pesanan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="136" y="112" width="436" height="20" uuid="5c46783b-0ba3-4289-b339-2ee951f245c1"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pemesanan_jumlah_pesanan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="112" width="136" height="20" uuid="568113b9-1549-478a-b367-39bb1e6cc57d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jumlah Pesanan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="136" y="132" width="436" height="20" uuid="d808cc3e-5d0a-4348-b132-69b11fa71078"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pemesanan_total_harga}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="132" width="136" height="20" uuid="be36758a-990d-4ec1-8c36-b1894e43d464"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Harga]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="136" y="152" width="436" height="20" uuid="17dd59b1-e437-4f15-8195-0a02c6cddc10"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pemesanan_dibayar}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="152" width="136" height="20" uuid="942a4a55-62a6-4897-b112-41305c060d00"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dibayar]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="136" y="172" width="436" height="20" uuid="4587062d-9965-427c-b4db-0422f71966f7"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pemesanan_sisa_pembayaran}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="172" width="136" height="20" uuid="b7c2076e-005b-4d5d-893d-0a08dbe07990"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sisa Pembayaran]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="136" y="192" width="436" height="20" uuid="4804440a-e3bf-4ea8-935f-972d6c49559a"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pemesanan_status}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="192" width="136" height="20" uuid="070119de-c33f-4278-aa64-c39951c3f304"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="136" y="92" width="436" height="20" uuid="1a1c1f8f-839a-4baf-bdaa-dba36f83da3f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pemesanan_tanggal_pengiriman}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="92" width="136" height="20" uuid="7245d013-4254-48aa-8bfb-8406a18085c9"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Pengiriman]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="118" y="19" width="332" height="20" uuid="a0c8fa1f-4feb-42d8-8924-37578c3f52e2"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STURK INI SEBAGAI TANDA BUKTI PEMBAYARAN YANG SAH]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

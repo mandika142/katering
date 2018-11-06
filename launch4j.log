@@ -1,0 +1,106 @@
+
+
+Version:	3.10
+CmdLine:	D:\Document\SEMESTER 4\BU YUYUN\HASIL PROGRAM JAVA\TUGAS 2 PBO\CatheringBussines\CatheringBussines.exe --l4j-debug
+WOW64:		yes
+Working dir:	D:\Document\SEMESTER 4\BU YUYUN\HASIL PROGRAM JAVA\TUGAS 2 PBO\CatheringBussines\.
+Java min ver:	1.7.0
+Java max ver:	1.8.0
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Ignore:		1.7
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_79
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Match:		1.7.0_079
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_102\bin\javaw.exe (OK)
+Match:		1.8
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_102
+Ignore:		1.8.0_102
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		1.7
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_79
+Ignore:		1.7.0_079
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.8
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_102
+Ignore:		1.8.0_102
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Runtime used:	1.8 (64-bit)
+Launcher:	C:\Program Files\Java\jre1.8.0_102\bin\javaw.exe
+Launcher args:	-jar "D:\Document\SEMESTER 4\BU YUYUN\HASIL PROGRAM JAVA\TUGAS 2 PBO\CatheringBussines\CatheringBussines.exe"
+Args length:	109/32768 chars
+Exit code:	0
+
+
+Version:	3.10
+CmdLine:	D:\Document\SEMESTER 4\BU YUYUN\HASIL PROGRAM JAVA\TUGAS 2 PBO\CatheringBussines\catering.exe --l4j-debug
+WOW64:		yes
+Working dir:	D:\Document\SEMESTER 4\BU YUYUN\HASIL PROGRAM JAVA\TUGAS 2 PBO\CatheringBussines\.
+Java min ver:	1.7.0
+Java max ver:	1.8.0
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Ignore:		1.7
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_79
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Match:		1.7.0_079
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_102\bin\javaw.exe (OK)
+Match:		1.8
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_102
+Ignore:		1.8.0_102
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		1.7
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_79
+Ignore:		1.7.0_079
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.8
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_102
+Ignore:		1.8.0_102
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Runtime used:	1.8 (64-bit)
+Launcher:	C:\Program Files\Java\jre1.8.0_102\bin\javaw.exe
+Launcher args:	-jar "D:\Document\SEMESTER 4\BU YUYUN\HASIL PROGRAM JAVA\TUGAS 2 PBO\CatheringBussines\catering.exe"
+Args length:	100/32768 chars
+Exit code:	0
+
+
+Version:	3.10
+CmdLine:	D:\Document\SEMESTER 4\BU YUYUN\HASIL PROGRAM JAVA\TUGAS 2 PBO\CatheringBussines\catering.exe --l4j-debug
+WOW64:		yes
+Working dir:	D:\Document\SEMESTER 4\BU YUYUN\HASIL PROGRAM JAVA\TUGAS 2 PBO\CatheringBussines\.
+Java min ver:	1.6.0
+Java max ver:	1.8.0
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Match:		1.7
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.7.0_79
+Check launcher:	C:\Program Files\Java\jre7\bin\javaw.exe (OK)
+Match:		1.7.0_079
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_102\bin\javaw.exe (OK)
+Match:		1.8
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_102
+Ignore:		1.8.0_102
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.7
+Ignore:		1.7
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.7.0_79
+Ignore:		1.7.0_079
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.8
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_102
+Ignore:		1.8.0_102
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Runtime used:	1.8 (64-bit)
+Launcher:	C:\Program Files\Java\jre1.8.0_102\bin\javaw.exe
+Launcher args:	-jar "D:\Document\SEMESTER 4\BU YUYUN\HASIL PROGRAM JAVA\TUGAS 2 PBO\CatheringBussines\catering.exe"
+Args length:	100/32768 chars
+Exit code:	0
